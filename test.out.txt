@@ -1,0 +1,5 @@
+uvxyz/ -> pqrst/ -> klmno/ -> fghij/ -> abcde/
+pqrst/ -> uvxyz/ -> klmno/ -> fghij/ -> abcde/
+klmno/ -> uvxyz/ -> pqrst/ -> fghij/ -> abcde/
+fghij/ -> uvxyz/ -> pqrst/ -> klmno/ -> abcde/
+abcde/ -> uvxyz/ -> pqrst/ -> klmno/ -> fghij/
