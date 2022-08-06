@@ -1,7 +1,5 @@
 # 5words
 
-> Look mummy, no graphs!
-
 This repo contains my attempt at solving the [five-words puzzle presented on 2022-08-03 by Matt Parker of Stand-up Maths](https://www.youtube.com/watch?v=_-AfhLQfb6w) (not the official name of the problem and not the first time it's been discovered, but this is where I saw it first).
 
 My solution is to convert each word into a 32-bit integer (bit vector) and then use the first 27 bits to encode the presence of each letter in the word.
@@ -36,9 +34,9 @@ BuildTree(parent, bitmask, depth) -> Node:
 The red-black tree ensures that previous computations are stored in O(n)-space, can be inserted in O(1) and accessed in O(log(n)), providing cheap shortcuts for the program.
 The successes-list can be used to print the results once the tree has been built.
 
-I'm bad at explaining this, but for me, working my way back from the finished result of having covered the entire alphabet (technically incorrect, but it shouldn't matter) by performing 'legal' subtractions seemed much easier than trying to stack 5 layers of word combinations.
+I'm bad at explaining this, but for me, working my way back from the finished result of having covered the entire alphabet (technically incorrect, but it shouldn't matter) by performing 'legal' subtractions seemed much easier than trying to stack 5 layers of word combinations, like solving a maze by starting from the exit and working backwards. I don't know if it's true, but my intuition is that there must be some dead-end combinations that I avoid checking by going this direction. In the end, I don't consider this solution particularly smart, but at least it executes in less than a minute on my hardware.
 
-The solution is provably faster, especially compared to the famous Parker-Algorithm, but the only thing I can directly point to is re-using precomputed results like in a dynamic programming algorithm.
+This is a lot faster, especially compared to the now-famous Parker Algorithm of Retrieving Known 5-words by Repitition (PARK5R), but the only thing I can directly point to is re-using precomputed results like in a dynamic programming algorithm.
 
 In the end, I get the wrong amount of 5-word combinations, so I must have made a mistake somewhere. Consider this no more than an attempt at solving the problem.
 
@@ -47,5 +45,5 @@ I'd like to extend a thanks to (`fgoncalves` on github)[https://github.com/fgonc
 ## Addendum
 
 I wrote an extremely short python script that uses the package PyDictionary to filter out all the words that have no dictionary-defined meaning.
-I've left those words in the defined.txt file, but they don't seem to be useful for 5-words...
+I've left those words in the defined.txt file, but they don't seem to be useful for 5-words... In fact, using only dictionary-defined words I end up with 0 valid combinations.
 
