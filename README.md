@@ -36,7 +36,7 @@ The successes-list can be used to print the results once the tree has been built
 
 I'm bad at explaining this, but for me, working my way back from the finished result of having covered the entire alphabet (technically incorrect, but it shouldn't matter) by performing 'legal' subtractions seemed much easier than trying to stack 5 layers of word combinations, like solving a maze by starting from the exit and working backwards. I don't know if it's true, but my intuition is that there must be some dead-end combinations that I avoid checking by going this direction. In the end, I don't consider this solution particularly smart, but at least it executes in less than a minute on my hardware.
 
-This is a lot faster, especially compared to the now-famous Parker Algorithm of Retrieving Known 5-words by Repitition (PARK5R), but the only thing I can directly point to is re-using precomputed results like in a dynamic programming algorithm.
+This is a lot faster, especially compared to the now-famous **Parker Algorithm of Retrieving Known 5-letter-words through Excessive Repitition (PARKER)**, but the only thing I can directly point to is re-using precomputed results like in a dynamic programming algorithm.
 
 In the end, I get the wrong amount of 5-word combinations, so I must have made a mistake somewhere. Consider this no more than an attempt at solving the problem.
 
