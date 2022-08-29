@@ -40,7 +40,7 @@ This is a lot faster, especially compared to the now-famous [**Parker Algorithm 
 
 In the end, I get the wrong amount of 5-word combinations, so I must have made a mistake somewhere. Consider this no more than an attempt at solving the problem.
 
-I'd like to extend a thanks to (`fgoncalves` on github)[https://github.com/fgoncalves] for hosting a public implementation of a generic(ish) red-black tree in C.
+I'd like to extend a thanks to [`fgoncalves` on github](https://github.com/fgoncalves) for hosting a public implementation of a generic(ish) red-black tree in C.
 
 ## Addendum
 
